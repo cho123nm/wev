@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #ff1493;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4b0082;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6; /* Màu hồng nhạt hơn */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6; /* Màu hồng nhạt */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    z-index: 1; /* Đặt lên trên bông hoa */
+}
+
+h1, p {
+    transition: transform 1s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c70060;
+}
+
+.hidden {
+    display: none;
+}
+
+#flower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flower-img {
+    width: 200px; /* Kích thước bông hoa */
+    animation: bloom 1s forwards;
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6; /* Màu hồng nhạt */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    position: relative; /* Thêm vị trí tương đối */
+}
+
+.container {
+    z-index: 1; /* Đặt lên trên bông hoa */
+}
+
+h1, p {
+    transition: transform 1s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c70060;
+}
+
+.hidden {
+    display: none;
+}
+
+#flower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.flower-img {
+    width: 200px; /* Kích thước bông hoa */
+    animation: bloom 1s forwards;
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#animal-container {
+    position: absolute; /* Vị trí tuyệt đối để động vật có thể chạy tự do */
+    width: 100%;
+    height: 100%;
+}
+
+.animal {
+    position: absolute;
+    font-size: 100px; /*kích thước emoji động vật*/
+    transition: transform 2s ease; /* thêm hiệu ứng chuyển động cho động vật*/
+}
+/* Ví dụ về media query */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Giảm kích thước chữ cho màn hình nhỏ */
+    }
+    .container {
+        padding: 10px; /* Thêm padding cho không gian */
+    }
+}
